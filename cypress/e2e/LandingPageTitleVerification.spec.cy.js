@@ -5,7 +5,7 @@ describe('Landing Page Title Verification', () => {
     
     // Locate the section title 
     cy.get('h1')  // 
-      .should('be.visible')  // Ensure the title is visible
+      .should('be.visible')  // 
 
       // Verify the title text
       .should('have.text', 'Digital Innovation.Efficient Aviation.AirportLabs in the Press')  
