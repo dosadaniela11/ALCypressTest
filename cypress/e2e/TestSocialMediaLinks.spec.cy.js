@@ -10,7 +10,7 @@ describe('Facebook Link', () => {
 describe('Instagram Link', () => {
   it('should open Instagram link in a new window', () => {
     cy.visit('https://airportlabs.com/');
-    cy.get('[href="https://www.instagram.com/airportlabspeople/"]');
+    cy.get('[href="https://www.instagram.com/airportlabspeople/"]')
       .should('have.attr', 'target', '_blank')
       .and('have.attr', 'href', 'https://www.instagram.com/airportlabspeople/');
     cy.get('[href="https://www.instagram.com/airportlabspeople/"]').click();
